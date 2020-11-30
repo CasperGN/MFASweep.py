@@ -1,6 +1,6 @@
 # MFASweep
 
-Python port of [MFASweeb](https://github.com/dafthack/MFASweep) by @dafthack
+Python port of [MFASweep](https://github.com/dafthack/MFASweep) by @dafthack
 
 ## Install
 
