@@ -24,6 +24,6 @@ setuptools.setup(
             'License :: OSI Approved :: MIT License',
             'Environment :: Console'
         ],
-        keywords='pentesting enumeration',
+        keywords='pentesting enumeration azure mfa-tokens',
         python_requires = '>=3.4',
 )
