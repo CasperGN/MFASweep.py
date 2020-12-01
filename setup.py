@@ -9,7 +9,7 @@ with open('requirements.txt', 'r') as req:
 
 setuptools.setup(
         name = 'MFASweep.py',
-        version = '1.0.2',
+        version = '1.0.5',
         author = 'Casper G. Nielsen',
         author_email = 'whopsec@protonmail.com',
         description = 'Test Azure environment for MFA misconfigurations ',
