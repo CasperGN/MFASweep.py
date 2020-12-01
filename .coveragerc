@@ -1,0 +1,6 @@
+[run]
+omit = 
+    mfasweep/__init__.py
+    mfasweep/__main__.py
+
+branch = True
