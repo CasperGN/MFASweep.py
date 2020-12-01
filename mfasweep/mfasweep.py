@@ -21,8 +21,7 @@ class MFASweep():
     def __init__(self, args: argparse.Namespace):
         self.username = f'{args.user}@{args.domain}'
         self.domain = args.domain
-        print(os.environ['MFASWEEP_PASSWORD'])
-        if not os.environ['MFASWEEP_PASSWORD']:
+        if 'MFASWEEP_PASSWORD' not in os.environ:
             self.password = getpass.getpass('Enter password: ')
         else:
             self.password = os.environ['MFASWEEP_PASSWORD']
