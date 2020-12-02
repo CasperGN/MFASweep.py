@@ -5,7 +5,6 @@ import getpass
 import argparse
 import sys
 import re
-import json
 import imaplib
 import poplib
 import smtplib
@@ -130,7 +129,7 @@ class MFASweep():
             'isAccessPassSupported': "true"
         }
 
-        userrequest = O365Session.post('https://login.microsoftonline.com/common/GetCredentialType?mkt=en-US', json=form)
+        _ = O365Session.post('https://login.microsoftonline.com/common/GetCredentialType?mkt=en-US', json=form)
         
         auth = {
             'login': self.username,
@@ -303,4 +302,4 @@ def main(args):
     
     args = parser.parse_args()
 
-    mfasweep = MFASweep(args)
+    MFASweep(args)
