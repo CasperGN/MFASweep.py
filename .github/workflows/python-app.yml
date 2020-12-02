@@ -39,4 +39,8 @@ jobs:
         python setup.py sdist bdist_wheel
     - name: Test with pytest
       run: |
-        export PYTHONPATH='.';export MFASWEEP_PASSWORD='password'; pytest --cov mfasweep --verbose --cov-config .coveragerc
+        export PYTHONPATH='.';export MFASWEEP_PASSWORD='password'; pytest --cov mfasweep --verbose --cov-config .coveragerc > pytest-coverage.txt
+    - name: pytest-coverage-commentator
+      uses: coroo/pytest-coverage-commentator@v1.0.2
+      with:
+        pytest-coverage: pytest-coverage.txt
